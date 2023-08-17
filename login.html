@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230818002432">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="home.html" class="header__logo logo">
+					<picture><source data-srcset="img/icon/logo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/icon/logo.png" alt="Logo" width="183" height="30" /></picture>
+				</a>
+				<nav class="header__navigation navigation">
+					<ul class="navigation__links">
+						<li class="navigation__link">
+							<a class="navigation__link_action" href="home.html">HOME</a>
+						</li>
+						<li class="navigation__link">
+							<a href="shop_list.html">SHOP</a>
+						</li>
+						<li class="navigation__link">
+							<a href="blog_details.html">PAGE</a>
+						</li>
+						<li class="navigation__link">
+							<a href="blog_list.html">BLOG</a>
+						</li>
+						<li class="navigation__link">
+							<a href="contact_us.html">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="header__menu menu">
+					<div class="menu__inner">
+						<a href="login.html" class="menu__icon">
+							<svg class="menu__profile" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+								<path id="user" d="M1392.07,57.928a9.923,9.923,0,0,0-3.8-2.383,5.78,5.78,0,1,0-6.54,0A10.018,10.018,0,0,0,1375,65h1.56a8.44,8.44,0,0,1,16.88,0H1395A9.931,9.931,0,0,0,1392.07,57.928Zm-11.29-7.148A4.22,4.22,0,1,1,1385,55,4.222,4.222,0,0,1,1380.78,50.78Z" transform="translate(-1375 -45)" />
+							</svg>
+						</a>
+						<a href="shop_details.html" class="menu__icon">
+							<svg class="menu__serch" xmlns="http://www.w3.org/2000/svg" width="20.03" height="20" viewBox="0 0 20.03 20">
+								<path id="search" d="M1439.89,63.7l-5.81-5.81a7.944,7.944,0,1,0-1.18,1.178l5.81,5.81a0.417,0.417,0,0,0,.59,0l0.59-.589A0.421,0.421,0,0,0,1439.89,63.7Zm-11.96-4.533a6.25,6.25,0,1,1,6.25-6.25A6.254,6.254,0,0,1,1427.93,59.163Z" transform="translate(-1420 -45)" />
+							</svg>
+						</a>
+						<a href="#" class="menu__icon">
+							<svg class="menu__like" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+								<path id="heart_icon" d="M1484.78,49.589a6.683,6.683,0,0,0-4.17-4.371c-1.71-.595-3.75,0-5.58,1.611-1.83-1.569-3.88-2.122-5.58-1.569a6.884,6.884,0,0,0-4.17,4.371c-0.47,1.57-.51,4.117,1.95,7.215,1.11,1.4,2.82,3.4,4.22,4.965,2.68,3.014,3.11,3.183,3.49,3.183h0.17c0.39,0,.77-0.168,3.45-3.224,1.41-1.613,3.11-3.609,4.22-4.966C1485.25,53.706,1485.25,51.159,1484.78,49.589Zm-3.28,6.2c-1.96,2.462-5.32,6.324-6.47,7.385-1.15-1.061-4.52-4.924-6.48-7.385-1.61-1.994-2.21-3.947-1.7-5.687a4.986,4.986,0,0,1,3.11-3.225c1.23-.467,2.9.169,4.43,1.655a0.84,0.84,0,0,0,1.06.126,0.447,0.447,0,0,0,.22-0.17c1.53-1.443,3.19-2.079,4.42-1.655a5.168,5.168,0,0,1,3.11,3.268C1483.71,51.8,1483.12,53.79,1481.5,55.784Z" transform="translate(-1465.03 -45)" />
+							</svg>
+							<div class="icon-badge badge-like">3</div>
+						</a>
+						<a href="#" class="menu__icon">
+							<svg class="menu__shop" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 22 20">
+								<path id="cart_icon" d="M1527.44,65a2.724,2.724,0,1,1,2.74-2.724A2.738,2.738,0,0,1,1527.44,65Zm0-3.814a1.09,1.09,0,1,0,1.09,1.09A1.094,1.094,0,0,0,1527.44,61.183Zm1.75-2.806h-12.81a0.823,0.823,0,0,1-.8-0.628l-2.68-11.115h-2.06a0.817,0.817,0,1,1,0-1.634h2.71a0.824,0.824,0,0,1,.8.627l0.74,3.078h16.1a0.818,0.818,0,0,1,.8,1.014l-2,8.038A0.822,0.822,0,0,1,1529.19,58.377Zm-12.16-1.635h11.52l1.59-6.4h-14.65ZM1517.48,65a2.724,2.724,0,1,1,2.74-2.724A2.738,2.738,0,0,1,1517.48,65Zm0-3.814a1.09,1.09,0,1,0,1.09,1.09A1.094,1.094,0,0,0,1517.48,61.183Z" transform="translate(-1510 -45)" />
+							</svg>
+							<div class="icon-badge badge-shop">7</div>
+						</a>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="bread-crumbs">
+				<div class="bread-crumbs__left">
+					<picture><source data-srcset="img/breadcrumbs/foto.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="bread-crumbs__img bread-crumbs__img_left" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/breadcrumbs/foto.png" alt="1"></picture>
+				</div>
+
+				<div class="bread-crumbs__midle">
+					<h1 class="bread-crumbs__title">LOGIN</h1>
+					<menu class="bread-crumbs__menu">
+
+
+						<ul class="bread-crumbs__links">
+							<svg class="bread-crumbs__icon-home" width="16" height="16" viewBox="0 0 16 16">
+								<path d="M877,310l-7.771,6.858a0.665,0.665,0,0,0-.064.925h0a0.639,0.639,0,0,0,.91.065l0.286-.253v6.44A1.95,1.95,0,0,0,872.294,326H875.9v-5.274a1.138,1.138,0,0,1,1.128-1.146h0a1.138,1.138,0,0,1,1.128,1.146V326H881.7a1.95,1.95,0,0,0,1.934-1.965v-6.44l0.286,0.253a0.637,0.637,0,0,0,.909-0.065h0a0.663,0.663,0,0,0-.064-0.925Zm5.35,14.035a0.65,0.65,0,0,1-.645.655h-2.256v-3.964a2.437,2.437,0,0,0-2.417-2.456h0a2.437,2.437,0,0,0-2.417,2.456v3.964h-2.32a0.65,0.65,0,0,1-.645-0.655v-7.578l5.35-4.722,5.35,4.722v7.578Z" transform="translate(-869 -310)" />
+							</svg>
+							<li class="bread-crumbs__link">
+								<a href="../../home.html">home</a>
+							</li>
+
+						</ul>
+					</menu>
+
+				</div>
+
+				<div class="bread-crumbs__right">
+					<picture><source data-srcset="img/breadcrumbs/2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="bread-crumbs__img bread-crumbs__img_right" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/breadcrumbs/2.png" alt="2"></picture>
+				</div>
+
+			</section>
+			<section class="login">
+				<div class="login__container">
+					<div class="login__inner">
+						<nav class="login__nav">
+							<a href="register.html" class="login__link">REGISTeR</a>
+							<a href="login.html" class="login__link link-active">LOGIN</a>
+						</nav>
+						<form class="login__form">
+							<label for="form[email]">Username or email address*</label>
+							<input type="email" name="form[email]" required class="input input__secondary" placeholder="">
+
+							<label for="form[password]">Password*</label>
+							<input type="password" name="form[password]" required class="input input__secondary" placeholder="">
+
+							<div class="login__checkbox">
+								<input id="c_1" class="ui-checkbox" type="checkbox" value="1" name="form[checkbox]">
+								<label for="c_1" class="checkbox__label"><span class="checkbox__text">Remember me</span></label>
+							</div>
+							<button type="submit" class="login__button button button__inverse">LOGIN</button>
+							<a href="#" class="login__link-lost">Lost your password?</a>
+						</form>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<section class="footer__info">
+
+					<div class="footer__contact contact-footer">
+						<div class="contact-footer__logo logo">
+							<picture><source data-srcset="img/icon/logo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/icon/logo.png" alt="Logo" width="153" height="25" /></picture>
+						</div>
+
+						<ul class="contact-footer__links">
+							<li class="contact-footer__link">
+								<a href="#">No. 342 - London Oxford Street, 012 United States</a>
+							</li>
+							<li class="contact-footer__link">
+								<a href="Youremail@gmail.com">Youremail@gmail.com </a>
+							</li>
+							<li class="contact-footer__link">
+								<a href="tel:+02838388393">+0283 838 8393</a>
+							</li>
+						</ul>
+
+						<ul class="contact-footer__social-links">
+							<li class="contact-footer__social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="15">
+									<path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+								</svg>
+							</li>
+							<li class="contact-footer__social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15" height="15">
+									<path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+								</svg>
+							</li>
+							<li class="contact-footer__social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="15" height="15">
+									<path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+								</svg>
+							</li>
+							<li class="contact-footer__social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" width="15" height="15">
+									<path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+								</svg>
+							</li>
+							<li class="contact-footer__social-link">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="15" height="15">
+									<path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z" />
+								</svg>
+							</li>
+							<li class="contact-footer__social-link">
+								<svg width="15" height="15" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g>
+										<path d="M505,257c0,35.8,0.1,71.6,0,107.5c-0.2,52-24.4,90.5-67.6,117.7C412.1,498,384,505,354.2,505   c-65.2,0-130.3,0.3-195.5-0.1c-45.3-0.3-84.3-16.3-115.2-49.9c-19.1-20.8-30.5-45.3-33.8-73.6c-0.7-6-0.8-11.9-0.8-17.9   c0-71.3-0.1-142.6,0-213.9C9.2,97.5,33.4,59,76.6,31.8C102.1,15.9,130.3,9,160.3,9c65,0,130-0.3,195,0.1   c45.5,0.3,84.6,16.4,115.5,50.2c18.9,20.7,30.2,45.2,33.4,73.2c1.3,11,0.7,22,0.8,32.9C505.1,196,505,226.5,505,257z M46,257   c0,36.7-0.1,73.3,0,110c0.1,25.2,9.3,46.9,26.5,64.9c23.1,24.1,51.9,35.8,85,36c65.7,0.4,131.3,0.1,197,0.1   c21.2,0,41.4-4.6,59.8-15.2c34.4-19.7,53.8-48.7,53.8-89.3c0-72.2,0-144.3,0-216.5c0-25-9.1-46.6-26.2-64.5   c-22.9-24.2-51.8-36.1-84.8-36.3C290.7,45.7,224.4,46,158,46c-20.7,0-40.3,4.9-58.3,15.1C65.4,80.9,45.9,109.9,46,150.5   C46,186,46,221.5,46,257z" fill="#8d8d8d" />
+										<path d="M257.3,363c-64.6,0-116.4-51.6-116.3-116c0.1-62.7,52.6-114.1,116.7-114c64.4,0,116.4,51.7,116.3,115.5   C373.9,311.7,321.6,363,257.3,363z M257.3,326c43.9,0,79.7-34.9,79.7-77.8c0-43.1-35.5-78.2-79.3-78.2c-43.9,0-79.7,34.9-79.7,77.8   C178,290.9,213.5,326,257.3,326z" fill="#8d8d8d" />
+										<path d="M363,123.6c0-14.2,10.9-25.6,24.5-25.6c13.6,0,24.5,11.5,24.5,25.6c0,13.9-10.9,25.3-24.3,25.4   C374.1,149.1,363,137.8,363,123.6z" fill="#8d8d8d" />
+									</g>
+								</svg>
+							</li>
+						</ul>
+					</div>
+
+					<div data-spollers="479.98,max" data-spollers-speed="200" class="footer__useful useful-footer spollers ">
+						<details class="spollers__item">
+							<summary class="useful-footer__title spollers__title">Useful Links</summary>
+							<ul class="useful-footer__links spollers__body">
+								<li class="useful-footer__link">
+									<a href="#">About Us</a>
+								</li>
+								<li class="useful-footer__link">
+									<a href="#">Privacy Policy</a>
+								</li>
+								<li class="useful-footer__link">
+									<a href="#">Terms & Conditions</a>
+								</li>
+								<li class="useful-footer__link">
+									<a href="#">Contact Us</a>
+								</li>
+								<li class="useful-footer__link">
+									<a href="#"> Help & Support</a>
+								</li>
+							</ul>
+						</details>
+					</div>
+
+					<div data-spollers="479.98,max" data-spollers-speed="200" class="footer__accounts accounts spollers">
+						<details class="spollers__item">
+							<summary class="accounts__title spollers__title">My Account</summary>
+							<ul class="accounts__links spollers__body">
+								<li class="accounts__link">
+									<a href="#">My Account</a>
+								</li>
+								<li class="accounts__link">
+									<a href="#">My Cart</a>
+								</li>
+								<li class="accounts__link">
+									<a href="#">My WIshlist</a>
+								</li>
+								<li class="accounts__link">
+									<a href="#">Registration</a>
+								</li>
+								<li class="accounts__link">
+									<a href="#">Check Out</a>
+								</li>
+							</ul>
+						</details>
+					</div>
+
+					<div class="footer__subscribe subscribe">
+						<h3 class="subscribe__title">Subscribe Our Newsletter</h3>
+						<p class="subscribe__text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+							suspendisse ultrices gravida.
+						</p>
+						<form class="subscribe__form">
+							<input type="email" name="form[email]" placeholder="Your email address" class="input input__primary" required="email" />
+							<button data-ripple type="submit" class="button button__primary button__primary_accent">
+								Subscribe
+							</button>
+						</form>
+					</div>
+				</section>
+
+				<section class="copiraits">
+					<p class="copiraits__title">
+						© 2019 CodeAstrology. All Rights Reserved.
+					</p>
+					<div class="copiraits__pay-block">
+						<p class="copiraits__text">We Accept</p>
+						<ul class="copiraits__pays">
+							<li class="copiraits__pay">
+								<svg class="copiraits__icon" enable-background="new 0 0 64 64" height="64px" id="Layer_1" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g>
+										<g>
+											<g>
+												<path d="M63.5,32c0,10.4-8.4,18.9-18.9,18.9c-10.4,0-18.9-8.5-18.9-18.9v0c0-10.4,8.4-18.9,18.8-18.9     C55.1,13.1,63.5,21.6,63.5,32C63.5,32,63.5,32,63.5,32z" fill="#FFB600" />
+											</g>
+										</g>
+										<g>
+											<g>
+												<path d="M44.6,13.1c10.4,0,18.9,8.5,18.9,18.9c0,0,0,0,0,0c0,10.4-8.4,18.9-18.9,18.9c-10.4,0-18.9-8.5-18.9-18.9     " fill="#F7981D" />
+											</g>
+										</g>
+										<g>
+											<g>
+												<path d="M44.6,13.1c10.4,0,18.9,8.5,18.9,18.9c0,0,0,0,0,0c0,10.4-8.4,18.9-18.9,18.9" fill="#FF8500" />
+											</g>
+										</g>
+										<g>
+											<g>
+												<path d="M19.2,13.1C8.9,13.2,0.5,21.6,0.5,32c0,10.4,8.4,18.9,18.9,18.9c4.9,0,9.3-1.9,12.7-4.9l0,0h0     c0.7-0.6,1.3-1.3,1.9-2h-3.9c-0.5-0.6-1-1.3-1.4-1.9h6.7c0.4-0.6,0.8-1.3,1.1-2h-8.9c-0.3-0.6-0.6-1.3-0.8-2h10.4     c0.6-1.9,1-3.9,1-6c0-1.4-0.2-2.7-0.4-4H26.2c0.1-0.7,0.3-1.3,0.5-2h10.4c-0.2-0.7-0.5-1.4-0.8-2h-8.8c0.3-0.7,0.7-1.3,1.1-2h6.7     c-0.4-0.7-0.9-1.4-1.5-2h-3.7c0.6-0.7,1.2-1.3,1.9-1.9c-3.3-3.1-7.8-4.9-12.7-4.9C19.3,13.1,19.3,13.1,19.2,13.1z" fill="#FF5050" />
+											</g>
+										</g>
+										<g>
+											<g>
+												<path d="M0.5,32c0,10.4,8.4,18.9,18.9,18.9c4.9,0,9.3-1.9,12.7-4.9l0,0h0c0.7-0.6,1.3-1.3,1.9-2h-3.9     c-0.5-0.6-1-1.3-1.4-1.9h6.7c0.4-0.6,0.8-1.3,1.1-2h-8.9c-0.3-0.6-0.6-1.3-0.8-2h10.4c0.6-1.9,1-3.9,1-6c0-1.4-0.2-2.7-0.4-4     H26.2c0.1-0.7,0.3-1.3,0.5-2h10.4c-0.2-0.7-0.5-1.4-0.8-2h-8.8c0.3-0.7,0.7-1.3,1.1-2h6.7c-0.4-0.7-0.9-1.4-1.5-2h-3.7     c0.6-0.7,1.2-1.3,1.9-1.9c-3.3-3.1-7.8-4.9-12.7-4.9c0,0-0.1,0-0.1,0" fill="#E52836" />
+											</g>
+										</g>
+										<g>
+											<g>
+												<path d="M19.4,50.9c4.9,0,9.3-1.9,12.7-4.9l0,0h0c0.7-0.6,1.3-1.3,1.9-2h-3.9c-0.5-0.6-1-1.3-1.4-1.9h6.7     c0.4-0.6,0.8-1.3,1.1-2h-8.9c-0.3-0.6-0.6-1.3-0.8-2h10.4c0.6-1.9,1-3.9,1-6c0-1.4-0.2-2.7-0.4-4H26.2c0.1-0.7,0.3-1.3,0.5-2     h10.4c-0.2-0.7-0.5-1.4-0.8-2h-8.8c0.3-0.7,0.7-1.3,1.1-2h6.7c-0.4-0.7-0.9-1.4-1.5-2h-3.7c0.6-0.7,1.2-1.3,1.9-1.9     c-3.3-3.1-7.8-4.9-12.7-4.9c0,0-0.1,0-0.1,0" fill="#CB2026" />
+											</g>
+										</g>
+										<g>
+											<g>
+												<g>
+													<path d="M26.1,36.8l0.3-1.7c-0.1,0-0.3,0.1-0.5,0.1c-0.7,0-0.8-0.4-0.7-0.6l0.6-3.5h1.1l0.3-1.9h-1l0.2-1.2h-2      c0,0-1.2,6.6-1.2,7.4c0,1.2,0.7,1.7,1.6,1.7C25.4,37.1,25.9,36.9,26.1,36.8z" fill="#FFFFFF" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M26.8,33.6c0,2.8,1.9,3.5,3.5,3.5c1.5,0,2.1-0.3,2.1-0.3l0.4-1.9c0,0-1.1,0.5-2.1,0.5      c-2.2,0-1.8-1.6-1.8-1.6h4.1c0,0,0.3-1.3,0.3-1.8c0-1.3-0.7-2.9-2.9-2.9C28.3,28.9,26.8,31.1,26.8,33.6z M30.3,30.7      c1.1,0,0.9,1.3,0.9,1.4H29C29,32,29.2,30.7,30.3,30.7z" fill="#FFFFFF" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M43,36.8l0.4-2.2c0,0-1,0.5-1.7,0.5c-1.4,0-2-1.1-2-2.3c0-2.4,1.2-3.7,2.6-3.7c1,0,1.8,0.6,1.8,0.6      l0.3-2.1c0,0-1.2-0.5-2.3-0.5c-2.3,0-4.6,2-4.6,5.8c0,2.5,1.2,4.2,3.6,4.2C41.9,37.1,43,36.8,43,36.8z" fill="#FFFFFF" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M15.1,28.9c-1.4,0-2.4,0.4-2.4,0.4l-0.3,1.7c0,0,0.9-0.4,2.2-0.4c0.7,0,1.3,0.1,1.3,0.7      c0,0.4-0.1,0.5-0.1,0.5s-0.6,0-0.9,0c-1.7,0-3.6,0.7-3.6,3c0,1.8,1.2,2.2,1.9,2.2c1.4,0,2-0.9,2.1-0.9l-0.1,0.8h1.8l0.8-5.5      C17.8,29,15.8,28.9,15.1,28.9z M15.5,33.4c0,0.3-0.2,1.9-1.4,1.9c-0.6,0-0.8-0.5-0.8-0.8c0-0.5,0.3-1.2,1.8-1.2      C15.4,33.4,15.5,33.4,15.5,33.4z" fill="#FFFFFF" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M19.7,37c0.5,0,3,0.1,3-2.6c0-2.5-2.4-2-2.4-3c0-0.5,0.4-0.7,1.1-0.7c0.3,0,1.4,0.1,1.4,0.1l0.3-1.8      c0,0-0.7-0.2-1.9-0.2c-1.5,0-3,0.6-3,2.6c0,2.3,2.5,2.1,2.5,3c0,0.6-0.7,0.7-1.2,0.7c-0.9,0-1.8-0.3-1.8-0.3l-0.3,1.8      C17.5,36.8,18,37,19.7,37z" fill="#FFFFFF" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M59.6,27.3L59.2,30c0,0-0.8-1-1.9-1c-1.8,0-3.4,2.2-3.4,4.8c0,1.6,0.8,3.3,2.5,3.3      c1.2,0,1.9-0.8,1.9-0.8l-0.1,0.7h2l1.5-9.6L59.6,27.3z M58.7,32.6c0,1.1-0.5,2.5-1.6,2.5c-0.7,0-1.1-0.6-1.1-1.6      c0-1.6,0.7-2.6,1.6-2.6C58.3,30.9,58.7,31.4,58.7,32.6z" fill="#FFFFFF" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M4.2,36.9l1.2-7.2l0.2,7.2H7l2.6-7.2l-1.1,7.2h2.1l1.6-9.6H8.9l-2,5.9l-0.1-5.9H3.9l-1.6,9.6H4.2z" fill="#FFFFFF" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M35.2,36.9c0.6-3.3,0.7-6,2.1-5.5c0.2-1.3,0.5-1.8,0.7-2.3c0,0-0.1,0-0.4,0c-0.9,0-1.6,1.2-1.6,1.2      l0.2-1.1h-1.9l-1.3,7.8H35.2z" fill="#FFFFFF" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M47.6,28.9c-1.4,0-2.4,0.4-2.4,0.4l-0.3,1.7c0,0,0.9-0.4,2.2-0.4c0.7,0,1.3,0.1,1.3,0.7      c0,0.4-0.1,0.5-0.1,0.5s-0.6,0-0.9,0c-1.7,0-3.6,0.7-3.6,3c0,1.8,1.2,2.2,1.9,2.2c1.4,0,2-0.9,2.1-0.9l-0.1,0.8h1.8l0.8-5.5      C50.4,29,48.3,28.9,47.6,28.9z M48.1,33.4c0,0.3-0.2,1.9-1.4,1.9c-0.6,0-0.8-0.5-0.8-0.8c0-0.5,0.3-1.2,1.8-1.2      C48,33.4,48,33.4,48.1,33.4z" fill="#FFFFFF" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M52,36.9c0.6-3.3,0.7-6,2.1-5.5c0.2-1.3,0.5-1.8,0.7-2.3c0,0-0.1,0-0.4,0c-0.9,0-1.6,1.2-1.6,1.2      l0.2-1.1h-1.9l-1.3,7.8H52z" fill="#FFFFFF" />
+												</g>
+											</g>
+										</g>
+										<g>
+											<g>
+												<g>
+													<path d="M23,35.4c0,1.2,0.7,1.7,1.6,1.7c0.7,0,1.3-0.2,1.5-0.3l0.3-1.7c-0.1,0-0.3,0.1-0.5,0.1      c-0.7,0-0.8-0.4-0.7-0.6l0.6-3.5h1.1l0.3-1.9h-1l0.2-1.2" fill="#DCE5E5" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M27.8,33.6c0,2.8,0.9,3.5,2.5,3.5c1.5,0,2.1-0.3,2.1-0.3l0.4-1.9c0,0-1.1,0.5-2.1,0.5      c-2.2,0-1.8-1.6-1.8-1.6h4.1c0,0,0.3-1.3,0.3-1.8c0-1.3-0.7-2.9-2.9-2.9C28.3,28.9,27.8,31.1,27.8,33.6z M30.3,30.7      c1.1,0,1.3,1.3,1.3,1.4H29C29,32,29.2,30.7,30.3,30.7z" fill="#DCE5E5" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M43,36.8l0.4-2.2c0,0-1,0.5-1.7,0.5c-1.4,0-2-1.1-2-2.3c0-2.4,1.2-3.7,2.6-3.7c1,0,1.8,0.6,1.8,0.6      l0.3-2.1c0,0-1.2-0.5-2.3-0.5c-2.3,0-3.6,2-3.6,5.8c0,2.5,0.2,4.2,2.6,4.2C41.9,37.1,43,36.8,43,36.8z" fill="#DCE5E5" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M12.4,31.1c0,0,0.9-0.4,2.2-0.4c0.7,0,1.3,0.1,1.3,0.7c0,0.4-0.1,0.5-0.1,0.5s-0.6,0-0.9,0      c-1.7,0-3.6,0.7-3.6,3c0,1.8,1.2,2.2,1.9,2.2c1.4,0,2-0.9,2.1-0.9l-0.1,0.8h1.8l0.8-5.5c0-2.3-2-2.4-2.8-2.4 M16.5,33.4      c0,0.3-1.2,1.9-2.4,1.9c-0.6,0-0.8-0.5-0.8-0.8c0-0.5,0.3-1.2,1.8-1.2C15.4,33.4,16.5,33.4,16.5,33.4z" fill="#DCE5E5" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M17.5,36.8c0,0,0.6,0.2,2.3,0.2c0.5,0,3,0.1,3-2.6c0-2.5-2.4-2-2.4-3c0-0.5,0.4-0.7,1.1-0.7      c0.3,0,1.4,0.1,1.4,0.1l0.3-1.8c0,0-0.7-0.2-1.9-0.2c-1.5,0-2,0.6-2,2.6c0,2.3,1.5,2.1,1.5,3c0,0.6-0.7,0.7-1.2,0.7" fill="#DCE5E5" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M59.2,30c0,0-0.8-1-1.9-1c-1.8,0-2.4,2.2-2.4,4.8c0,1.6-0.2,3.3,1.5,3.3c1.2,0,1.9-0.8,1.9-0.8l-0.1,0.7      h2l1.5-9.6 M59.1,32.6c0,1.1-0.9,2.5-2,2.5c-0.7,0-1.1-0.6-1.1-1.6c0-1.6,0.7-2.6,1.6-2.6C58.3,30.9,59.1,31.4,59.1,32.6z" fill="#DCE5E5" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M4.2,36.9l1.2-7.2l0.2,7.2H7l2.6-7.2l-1.1,7.2h2.1l1.6-9.6H9.7l-2.8,5.9l-0.1-5.9H5.7l-3.4,9.6H4.2z" fill="#DCE5E5" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M33.1,36.9h2.1c0.6-3.3,0.7-6,2.1-5.5c0.2-1.3,0.5-1.8,0.7-2.3c0,0-0.1,0-0.4,0c-0.9,0-1.6,1.2-1.6,1.2      l0.2-1.1" fill="#DCE5E5" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M44.9,31.1c0,0,0.9-0.4,2.2-0.4c0.7,0,1.3,0.1,1.3,0.7c0,0.4-0.1,0.5-0.1,0.5s-0.6,0-0.9,0      c-1.7,0-3.6,0.7-3.6,3c0,1.8,1.2,2.2,1.9,2.2c1.4,0,2-0.9,2.1-0.9l-0.1,0.8h1.8l0.8-5.5c0-2.3-2-2.4-2.8-2.4 M49,33.4      c0,0.3-1.2,1.9-2.4,1.9c-0.6,0-0.8-0.5-0.8-0.8c0-0.5,0.3-1.2,1.8-1.2C48,33.4,49,33.4,49,33.4z" fill="#DCE5E5" />
+												</g>
+											</g>
+											<g>
+												<g>
+													<path d="M49.9,36.9H52c0.6-3.3,0.7-6,2.1-5.5c0.2-1.3,0.5-1.8,0.7-2.3c0,0-0.1,0-0.4,0c-0.9,0-1.6,1.2-1.6,1.2      l0.2-1.1" fill="#DCE5E5" />
+												</g>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</li>
+							<li class="copiraits__pay">
+								<svg class="copiraits__icon" height="20" width="28" style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 1.41421;
+              " version="1.1" viewBox="0 0 900 575" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g transform="matrix(4.16667,0,0,4.16667,0,0)">
+										<rect height="137.21" style="fill: white; fill-rule: nonzero" width="216" x="0" y="0.79" />
+										<rect height="18.72" style="fill: rgb(252, 179, 21); fill-rule: nonzero" width="208.802" x="3.597" y="115.705" />
+										<rect height="18.72" style="fill: rgb(13, 53, 127); fill-rule: nonzero" width="208.802" x="3.597" y="4.389" />
+										<path d="M106.197,43.734L95.191,95.189L81.879,95.189L92.886,43.734L106.197,43.734ZM162.201,76.959L169.209,57.636L173.24,76.959L162.201,76.959ZM177.061,95.189L189.369,95.189L178.615,43.734L167.261,43.734C164.701,43.734 162.545,45.218 161.59,47.506L141.615,95.189L155.596,95.189L158.371,87.504L175.447,87.504L177.061,95.189ZM142.309,78.39C142.367,64.811 123.537,64.058 123.662,57.991C123.703,56.147 125.461,54.183 129.307,53.681C131.213,53.435 136.473,53.237 142.436,55.984L144.768,45.068C141.564,43.91 137.443,42.794 132.316,42.794C119.156,42.794 109.898,49.784 109.824,59.802C109.74,67.21 116.438,71.34 121.473,73.807C126.664,76.329 128.404,77.947 128.379,80.2C128.343,83.652 124.238,85.18 120.418,85.238C113.721,85.342 109.84,83.428 106.746,81.986L104.33,93.266C107.445,94.692 113.186,95.933 119.129,95.997C133.119,95.997 142.268,89.088 142.309,78.39ZM87.176,43.734L65.607,95.189L51.537,95.189L40.922,54.124C40.279,51.599 39.718,50.671 37.761,49.604C34.56,47.865 29.275,46.239 24.629,45.227L24.943,43.734L47.595,43.734C50.48,43.734 53.076,45.654 53.736,48.977L59.343,78.754L73.191,43.734L87.176,43.734Z" style="fill: rgb(13, 53, 127); fill-rule: nonzero" />
+									</g>
+								</svg>
+							</li>
+							<li class="copiraits__pay">
+								<svg class="copiraits__icon" enable-background="new 0 0 64 64" height="64px" id="Layer_1" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<g>
+										<g>
+											<path d="M49.2,28.2h-3.4c-0.2,0-0.4,0.2-0.5,0.4l-1.4,8.8c0,0.2,0.1,0.3,0.3,0.3h1.8c0.2,0,0.3-0.1,0.3-0.3    l0.4-2.5c0-0.2,0.2-0.4,0.5-0.4h1.1c2.3,0,3.6-1.1,3.9-3.3c0.2-0.9,0-1.7-0.4-2.2C51.2,28.5,50.3,28.2,49.2,28.2 M49.6,31.5    c-0.2,1.2-1.1,1.2-2,1.2H47l0.4-2.3c0-0.1,0.1-0.2,0.3-0.2h0.2c0.6,0,1.2,0,1.5,0.4C49.6,30.7,49.6,31,49.6,31.5" fill="#139AD6" />
+										</g>
+										<g>
+											<path d="M24.7,28.2h-3.4c-0.2,0-0.4,0.2-0.5,0.4l-1.4,8.8c0,0.2,0.1,0.3,0.3,0.3h1.6c0.2,0,0.4-0.2,0.5-0.4    l0.4-2.4c0-0.2,0.2-0.4,0.5-0.4h1.1c2.3,0,3.6-1.1,3.9-3.3c0.2-0.9,0-1.7-0.4-2.2C26.7,28.5,25.9,28.2,24.7,28.2 M25.1,31.5    c-0.2,1.2-1.1,1.2-2,1.2h-0.5l0.4-2.3c0-0.1,0.1-0.2,0.3-0.2h0.2c0.6,0,1.2,0,1.5,0.4C25.1,30.7,25.2,31,25.1,31.5" fill="#263B80" />
+										</g>
+										<g>
+											<path d="M35,31.4h-1.6c-0.1,0-0.3,0.1-0.3,0.2L33,32.1l-0.1-0.2c-0.4-0.5-1.1-0.7-1.9-0.7c-1.8,0-3.4,1.4-3.7,3.3    c-0.2,1,0.1,1.9,0.6,2.5c0.5,0.6,1.2,0.8,2.1,0.8c1.5,0,2.3-0.9,2.3-0.9l-0.1,0.5c0,0.2,0.1,0.3,0.3,0.3h1.5    c0.2,0,0.4-0.2,0.5-0.4l0.9-5.6C35.3,31.6,35.1,31.4,35,31.4 M32.7,34.6c-0.2,0.9-0.9,1.6-1.9,1.6c-0.5,0-0.9-0.2-1.1-0.4    c-0.2-0.3-0.3-0.7-0.3-1.2c0.1-0.9,0.9-1.6,1.8-1.6c0.5,0,0.8,0.2,1.1,0.4C32.6,33.7,32.7,34.2,32.7,34.6" fill="#263B80" />
+										</g>
+										<g>
+											<path d="M59.4,31.4h-1.6c-0.1,0-0.3,0.1-0.3,0.2l-0.1,0.5l-0.1-0.2c-0.4-0.5-1.1-0.7-1.9-0.7    c-1.8,0-3.4,1.4-3.7,3.3c-0.2,1,0.1,1.9,0.6,2.5c0.5,0.6,1.2,0.8,2.1,0.8c1.5,0,2.3-0.9,2.3-0.9l-0.1,0.5c0,0.2,0.1,0.3,0.3,0.3    h1.5c0.2,0,0.4-0.2,0.5-0.4l0.9-5.6C59.7,31.6,59.6,31.4,59.4,31.4 M57.1,34.6c-0.2,0.9-0.9,1.6-1.9,1.6c-0.5,0-0.9-0.2-1.1-0.4    c-0.2-0.3-0.3-0.7-0.3-1.2c0.1-0.9,0.9-1.6,1.8-1.6c0.5,0,0.8,0.2,1.1,0.4C57.1,33.7,57.2,34.2,57.1,34.6" fill="#139AD6" />
+										</g>
+										<g>
+											<g>
+												<path d="M43.7,31.4h-1.7c-0.2,0-0.3,0.1-0.4,0.2L39.4,35l-1-3.2c-0.1-0.2-0.2-0.3-0.5-0.3h-1.6     c-0.2,0-0.3,0.2-0.3,0.4l1.8,5.3l-1.7,2.4c-0.1,0.2,0,0.5,0.2,0.5h1.6c0.2,0,0.3-0.1,0.4-0.2l5.5-7.9     C44.1,31.7,43.9,31.4,43.7,31.4" fill="#263B80" />
+											</g>
+											<g>
+												<path d="M61.3,28.5l-1.4,9c0,0.2,0.1,0.3,0.3,0.3h1.4c0.2,0,0.4-0.2,0.5-0.4l1.4-8.8c0-0.2-0.1-0.3-0.3-0.3h-1.6     C61.5,28.2,61.4,28.3,61.3,28.5" fill="#139AD6" />
+											</g>
+											<g>
+												<path d="M12,25.2C11.3,24.4,10,24,8.2,24h-5c-0.3,0-0.6,0.3-0.7,0.6L0.5,37.7c0,0.3,0.2,0.5,0.4,0.5H4l0.8-4.9     l0,0.2c0.1-0.3,0.4-0.6,0.7-0.6h1.5c2.9,0,5.1-1.2,5.8-4.5c0-0.1,0-0.2,0-0.3c-0.1,0-0.1,0,0,0C12.9,26.8,12.7,26,12,25.2" fill="#263B80" />
+											</g>
+										</g>
+										<g>
+											<path d="M12.7,28.1L12.7,28.1c0,0.1,0,0.2,0,0.3c-0.7,3.4-2.9,4.5-5.8,4.5H5.4c-0.3,0-0.6,0.3-0.7,0.6l-1,6.1    c0,0.2,0.1,0.4,0.4,0.4h2.6c0.3,0,0.6-0.2,0.6-0.5l0-0.1l0.5-3.1l0-0.2c0-0.3,0.3-0.5,0.6-0.5h0.4c2.5,0,4.5-1,5-4    c0.2-1.2,0.1-2.3-0.5-3C13.2,28.4,13,28.2,12.7,28.1" fill="#139AD6" />
+										</g>
+										<g>
+											<path d="M12,27.8c-0.1,0-0.2-0.1-0.3-0.1c-0.1,0-0.2,0-0.3-0.1c-0.4-0.1-0.8-0.1-1.3-0.1H6.2c-0.1,0-0.2,0-0.3,0.1    c-0.2,0.1-0.3,0.3-0.3,0.5l-0.8,5.2l0,0.2c0.1-0.3,0.4-0.6,0.7-0.6h1.5c2.9,0,5.1-1.2,5.8-4.5c0-0.1,0-0.2,0.1-0.3    c-0.2-0.1-0.3-0.2-0.5-0.2C12.1,27.8,12.1,27.8,12,27.8" fill="#232C65" />
+										</g>
+									</g>
+								</svg>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+
+		</footer>
+
+
+	</div>
+	<script src="js/app.min.js?_v=20230818002432"></script>
+</body>
+
+</html>
